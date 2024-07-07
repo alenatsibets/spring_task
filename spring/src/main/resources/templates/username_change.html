@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usrename change</title>
+    <link rel="stylesheet" href="content/general.css">
+</head>
+<body>
+<h2>Usrename change</h2>
+<form action="/change-username" method="post">
+    <label>Email: <input type="email" name="email" required></label>
+    <br/>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required pattern=".{8,}" title="password must contains at least 8 characters">
+    <br/>
+    <label for="newUsername">New username:</label>
+    <input type="text" id="newUsername" name="newUsername" required>
+    <br/>
+    <button type="submit">Change</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Main form</title>
+    <link rel="stylesheet" href="content/general.css">
+</head>
+<body>
+<h2>Enter a number to multiply by 5</h2>
+<form action="/multiply" method="post">
+    <label for="number">Number:</label>
+    <input type="number" id="number" name="number" required>
+    <br/>
+    <br/>
+    <button type="submit">Multiply</button>
+</form>
+<hr/>
+<a href="/change-password">Change password</a>
+<br/>
+<a href="/change-username">Change username</a>
+<br/>
+<a href="/list_of_users">View list of users</a>
+<br/>
+<a href="/list_of_users_by_pattern">View list of users by pattern</a>
+<br/>
+<a href="/delete">Delete my account</a>
+<br/>
+<a href="/logout">Logout</a>
+</body>
+</html>

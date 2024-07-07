@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+    <link rel="stylesheet" href="content/general.css">
+</head>
+<body>
+<h2>Delete my account</h2>
+<form action="/delete" method="post">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    <br/>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required pattern=".{8,}" title="password must contains at least 8 characters">
+    <br/>
+    <span th:text="${message}"></span>
+    <br/>
+    <button type="submit">Delete</button>
+</form>
+<hr/>
+<a href="/form">Back to form</a>
+</body>
+</html>
